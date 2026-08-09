@@ -11,16 +11,22 @@ public class greaterinthree {
         System.out.print("Enter the third no.");
         int z=sc.nextInt();
         sc.close();
-        if(x>y && x>z){
+        if(x>y){
+            if(x>z){
             System.out.print("the greater no. is:"+x);
-
+            }
+            else{
+                System.out.print("the greater no. is:"+z);
+            }
         }
-        else if(y>x && y>z){
+        else{//y>x
+            if(y>z){
             System.out.print("the greater no. is:"+y);
+            }
+            else{
+                System.out.print("the greater no. is:"+z);
+            }
 
-        }
-        else{
-            System.out.print("the greater no. is:"+z);
         }
 
     }
