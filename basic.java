@@ -1,11 +1,19 @@
-import java.util.Scanner;
-
 class A{
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number:");
-        int a=sc.nextInt();
-        sc.close();
-        System.out.println("You entered: " + a);
+    String name="parent";
+    void display(){
+        System.out.println("Parent class");
+    }
+}
+class B extends A{
+    String name ="child";
+    void show(){
+        System.out.println("child class: "+this.name);
+        System.out.println("parent class: "+super.name);
+        
+
+    }
+    public static void main(String[] args) {
+        B a=new B();
+        a.show();
     }
 }
