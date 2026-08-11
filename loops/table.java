@@ -1,7 +1,7 @@
 package loops;
 import java.util.Scanner;
 
-public class printalleven1to100 {
+public class table {
 
     public static void main(String[] args) {
             Scanner sc=new Scanner(System.in);
