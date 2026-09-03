@@ -1,0 +1,28 @@
+package pattern;
+import java.util.Scanner;
+
+public class hollowrectangle {
+    public void main (String [] args){    Scanner sc=new Scanner(System.in);
+    System.out.print("enter the number");
+    int n=sc.nextInt();
+    System.out.print("enter the number");
+    int a=sc.nextInt();
+    
+    sc.close();
+    for(int i=0;i<=n;i++){
+        for(int j=0;j<=a;j++){
+            if(i==0 || i==n || j==0 || j==a){
+                System.out.print("* ");
+            }
+            else{
+                System.out.print("  ");
+            }
+            
+        }
+        System.out.println();
+    }
+    }
+
+
+    
+}
