@@ -22,3 +22,4 @@ public class minimumelementarray {
         sc.close();
     
 }
+}
