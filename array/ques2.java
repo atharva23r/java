@@ -19,11 +19,20 @@ public class ques2 {
         sc.close();
     }
     public static void print(int [] arr,int a) {
-        
+        int temp=0;
+        int b=0;
         for(int i=0;i<arr.length;i++){
             if(arr[i]==a){
-                System.out.print("the element is there : "+ arr[i] +"index: "+i);
+                temp=1;
+                b=i;
+                break;
             }
+        }
+        if(temp==0){
+            System.out.print("the element is not there in the array");
+        }
+        else{
+            System.out.println("the element is there " + arr[b]);
         }
         
     }
