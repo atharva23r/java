@@ -14,9 +14,10 @@ public class maximunelementofarray {
             if(arr[i]>max){
                 max=arr[i];
             }
-        System.out.print("the maximum number is :"+ max);
+        
 
         }
+        System.out.print("the maximum number is :"+ max);
         sc.close();
         
     }

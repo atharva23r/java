@@ -20,19 +20,19 @@ public class ques2 {
     }
     public static void print(int [] arr,int a) {
         int temp=0;
-        int b=0;
+        boolean flag = false;
         for(int i=0;i<arr.length;i++){
             if(arr[i]==a){
-                temp=1;
-                b=i;
+                temp=i;
+                flag = true;
                 break;
             }
         }
-        if(temp==0){
-            System.out.print("the element is not there in the array");
+        if(flag){
+            System.out.print("the element is there " + arr[temp] );
         }
         else{
-            System.out.println("the element is there " + arr[b]);
+            System.out.println( "the element is not in the array"   );
         }
         
     }
