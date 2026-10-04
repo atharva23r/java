@@ -17,13 +17,13 @@ public class rotatearray {
     }
     public static void main(String[] args) {
     Scanner sc=new Scanner(System.in);
-    int [] arr ={1,2,3,4,5,6,7,8,9};
+    int [] arr ={99, -1 ,-100 ,3 };
     int n=arr.length;
     System.out.print("enter the target: ");
     int d = sc.nextInt();
     d=d % n;
-    reverse(arr, 0, d );
-    reverse(arr,d+1,n-1);
+    reverse(arr, 0, n-d-1);
+    reverse(arr,n-d,n-1);
     reverse(arr,0, n-1);
     print(arr);
     sc.close();
