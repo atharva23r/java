@@ -22,7 +22,7 @@ public class rotatearray {
     System.out.print("enter the target: ");
     int d = sc.nextInt();
     d=d % n;
-    reverse(arr, 0, n-d-1);
+    reverse(arr, 0, d-n-1);
     reverse(arr,n-d,n-1);
     reverse(arr,0, n-1);
     print(arr);
